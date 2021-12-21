@@ -8,16 +8,16 @@ switch( $services )
 {
     Default
     {	if($option -eq "Stop")
-		{
-			Stop-Service -Name $services
-		}
-		elseif($option -eq "Start")	
-		{
-			Start-Service -Name $services
-		}
-		else
-		{
-			Write-Host "Option is mandatory, please pass -option start or stop"
-		}
+	{
+		Stop-Service -Name $services
+	}
+	elseif($option -eq "Start")	
+	{
+		Start-Service -Name $services
+	}
+	else
+	{
+		Write-Host "Option is mandatory, please pass -option start or stop"
+	}
     }
 }
